@@ -10,3 +10,4 @@ Este guia tem por objetivo abordar alguns topicos exigidos na prova de certifica
 Indice
 
 <a href="./TheHardWay/README.md">1 - Criar cluster kubernetes com kubeadm</a>
+<a href="./Maintenance/README.md">2 - Manutenção</a>
