@@ -1,0 +1,33 @@
+
+
+Troubleshoting control plane failures
+
+1 - Verificar estado dos nodes
+    kubectl get nodes
+
+2 - verificar estado dos pods
+    kubectl get pods
+
+3 - Verificar pods do sistema
+    kubectl get pods -n kube-system
+
+4 - Acessar master node e analisar serviços em execução
+
+    service kube-apiserver status
+
+    service kube-controller status
+
+    service kube-scheduler status
+
+    journalctl -u kube-apiserver
+
+5 -  Acessar worker node e analisar serviços em execução
+
+    service kubelet status
+
+    service kube-proxy status
+
+6 - Analisar logs dos componentes do control-plane
+
+    kubectl logs kube-apiserver-master -n kube-system
+

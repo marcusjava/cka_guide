@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  nodeName: kind-worker
+  containers:
+    - image: nginx:1.18.0
+      name: nginx
+      resources:
+        limits:
+          cpu: "0.2"
+          memory: 64Mi
+      volumeMounts:
+        - name: my-pvc1
+          mountPath: /var/www/html
+      ports:
+        - containerPort: 80
+          protocol: TCP
+          hostPort: 80
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+  volumes:
+    - name: my-pvc1
+      persistentVolumeClaim:
+        claimName: pvc-vol1

@@ -1,0 +1,11 @@
+*.pdf
+./Basics
+./Design
+./JSONPath
+./Lifecycle
+./Network
+./qos
+./Scheduling
+./Security
+./Storage
+./Troubleshoting

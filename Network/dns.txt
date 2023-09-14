@@ -1,0 +1,6 @@
+
+
+Exibir DNS name - cat /etc/hosts
+
+Query DNS Server - nslookup
+                 - dig

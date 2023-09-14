@@ -1,0 +1,24 @@
+
+
+
+Troubleshooting worker nodes failure
+
+1 - Verificar status dos nodes
+
+
+2 - Visualizar eventos
+
+    Prestar atenção às condições do node (DiskPressure,MemoryPressure,PIDPressure,Ready)
+
+3 - Acessar node com falha e executar os seguintes passos:
+
+  - 
+
+4 - Verificar status kubelet
+
+  service kubelet status
+  sudo journalctl -u kubelet -f
+
+5 - Verificar certificados do kubelet
+
+    openssl x509 -in /var/lib/kubelet/worker-1.crt  -text

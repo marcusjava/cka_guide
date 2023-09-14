@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webcolor-deployment
+  labels:
+    tier: frontend
+    app: webcolor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webcolor
+  template:
+    metadata:
+      name: webcolor-pod
+      labels:
+        app: webcolor
+    spec:
+      containers:
+        - name: webcolor
+          image: kodekloud/webapp-color:v2
+          env:
+            - name: APP_COLOR
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_COLOR
+                  name: webapp-config
+          resources:
+            requests:
+              cpu: "0.1"
+              memory: "64Mi"
+            limits:
+              cpu: "0.2"
+              memory: "96Mi"
+          ports:
+            - containerPort: 8080
+              protocol: TCP

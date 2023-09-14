@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-special
+spec:
+  containers:
+    - name: nginx-special
+      image: nginx:1.18.0
+      resources:
+        requests:
+          cpu: "0.1"
+          memory: "64Mi"
+        limits:
+          cpu: "0.3"
+          memory: "128Mi"
+  tolerations:
+    - key: "special"
+      value: "gpu"
+      effect: "NoSchedule"

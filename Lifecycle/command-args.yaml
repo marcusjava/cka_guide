@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-pink
+  labels:
+    tier: frontend
+spec:
+  containers:
+    - name: simple-webapp
+      image: kodekloud/webapp-color
+      command: ["python", "app.py"]
+      args: ["--color", "pink"]
+      resources:
+        requests:
+          cpu: "0.1"
+          memory: "64Mi"
+        limits:
+          cpu: "0.2"
+          memory: "96Mi"
+      ports:
+        - containerPort: 8080
+          protocol: TCP

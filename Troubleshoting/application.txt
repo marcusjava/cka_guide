@@ -1,0 +1,31 @@
+
+
+Troubleshoting application errors
+
+Verificando erros de aplicação
+
+
+1 - No caso de uma aplicação web verificar se a mesma está acessivel
+
+    Ex: curl http://web-service-ip:node-port
+
+2 - Verificar services
+    - Tipo - NodePort ou ClusterIp
+    - Portas
+    - Selectors 
+    - ports e target ports
+3 - Checar Pods
+  - Status
+  - variaveis de ambiente
+  - Eventos(pull image errors, node assign errors)
+    kubectl describe pod podname
+  - Restarts indicam erros
+  - logs
+    - kubectl logs web -f --previous
+  - number of restarts 
+  
+
+
+In case of web app check if page is acessible via service
+
+curl http://web-service-ip:node-port

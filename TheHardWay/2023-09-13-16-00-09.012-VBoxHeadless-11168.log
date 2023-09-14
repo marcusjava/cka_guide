@@ -1,0 +1,12 @@
+Log created: 2023-09-13T16:00:09.125738000Z
+Process ID:  11168 (0x2ba0)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: kubemaster
+Arg[3]: --startvm
+Arg[4]: 8c6f7e2a-5d6a-4595-82bb-10dd7686ea9f
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2

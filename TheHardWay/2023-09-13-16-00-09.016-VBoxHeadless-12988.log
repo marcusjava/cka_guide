@@ -1,0 +1,12 @@
+Log created: 2023-09-13T16:00:09.162845000Z
+Process ID:  12988 (0x32bc)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: kubenode01
+Arg[3]: --startvm
+Arg[4]: fa9beff8-dc58-4d0f-89ee-a115a4d60e2f
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
