@@ -1,6 +1,0 @@
-
-
-Em que devemos pensar antes de criar um cluster kubernetes:
-- Proposito?: Aprendizado(Minikube,kind), desenvolvimento e testes(multi-node cluster kubeadm ), produção(HA Multi-node clusters, external etcd servers, kubeadm,gcp, kops)
-- Nuvem ou OnPremise?
-- Workloads?: Quantidade, tipo(we, big data/analytics)

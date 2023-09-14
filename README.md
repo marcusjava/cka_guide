@@ -1,4 +1,7 @@
+<div align="center">
+
 <img src="./cka.png" />
+</div>
 
 <h2>Bem vindo ao guia rápido para Certified Kubernetes Administrator(CKA)</h2>
 
