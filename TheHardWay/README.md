@@ -158,6 +158,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ```
 
+kubeadm join 192.29.176.3:6443 --token f1w1bt.2luj3zszyq6zfrpb \
+ --discovery-token-ca-cert-hash sha256:7064304ff60e2bbb2357c05d45cdb1dded8e23b04a6afe2fba73463b9e4c92b6
+
 ### Criando o cluster
 
 #### Inicializando o master node
